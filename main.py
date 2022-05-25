@@ -17,7 +17,7 @@ def task():
         a = fake_ru.address()
         dict[i] = {i: [name_, tn, j, a]}
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write(json.dump(dict, f, indent=4, ensure_ascii=False))
+            f.writelines(dict)
 
 
 if __name__ == "__main__":
